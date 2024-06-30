@@ -13,6 +13,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+      .hero-text {
+        font-size: 48px; 
+        font-weight: 700; 
+        line-height: 64px;
+      }
+      .hero-image img {
+        width: 600px;
+      }
+
+      @media (max-width: 767px) {
+        .hero-text {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        .hero-image img {
+          width: 400px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 900px) {
+        .hero-text {
+          font-size: 40px;
+          line-height: 50px;
+        }
+        .hero-image img {
+          width: 400px;
+        }
+      }
+    </style>
+    
 </head>
 <body style="font-family: 'Poppins', sans-serif;">
 
@@ -53,8 +84,8 @@
 
       <div class="container-fluid" style="background-color: #FDFFF8;">
         <div class="row">
-          <div class="col m-auto p-5" style="color: #017C6D; font-size: 48px; font-weight: 700; line-height: 64px;">Seamlessly Integrate Tech Brilliance with Digiplus</div>
-          <div class="col"><img class="img-fluid p-3" src="Assets/Images/Camera.png" alt=""></div>
+          <div class="col-sm-12 col-md-6 m-auto p-5 hero-text" style="color: #017C6D;">Seamlessly Integrate Tech Brilliance with Digiplus</div>
+          <div class="col-sm-12 col-md-6 hero-image"><img class=" d-block m-auto p-3" src="Assets/Images/Camera.png" alt=""></div>
         </div>
       </div>
 
